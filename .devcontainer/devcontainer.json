@@ -1,0 +1,36 @@
+{
+	"name": "Python environment",
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "python",
+	"workspaceFolder": "/usr/src/app",
+	"shutdownAction": "stopCompose",
+	"remoteUser": "root",
+	"settings": {
+		"files.eol": "\n",
+		"terminal.integrated.profiles.linux": {
+			"bash": {
+				"path": "bash"
+			}
+		},
+		"python.pythonPath": "/usr/local/bin/python",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": false,
+		"python.linting.flake8Enabled": true,
+		"python.linting.mypyEnabled": true,
+		"python.formatting.provider": "black",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true,
+		},
+		"autoDocstring.docstringFormat": "numpy",
+		"autoDocstring.startOnNewLine": false,
+	},
+	"extensions": [
+		"esbenp.prettier-vscode",
+		"ms-azuretools.vscode-docker",
+		"njpwerner.autodocstring",
+		"redhat.vscode-yaml",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"ms-python.python",
+	],
+}
